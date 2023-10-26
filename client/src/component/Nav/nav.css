@@ -1,0 +1,10 @@
+.nav-ul li{
+    display: inline-flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    
+}
+.nav-ul li a{
+    text-decoration: none;
+    color: black;
+}

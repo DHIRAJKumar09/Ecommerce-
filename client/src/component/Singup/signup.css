@@ -1,0 +1,14 @@
+.signup{
+    display: block;
+    padding: 20px;
+}
+.input-box{
+    text-align: center;
+    display: block;
+    padding-top: 15px;
+    margin: 16px;
+    border-radius: 6px;
+    border-top: 2px solid  rgb(214, 86, 86) ;
+
+
+}
