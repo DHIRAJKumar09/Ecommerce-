@@ -4,7 +4,7 @@ import { BrowserRouter ,Routes,Route } from 'react-router-dom';
 import { Nav } from './component/Nav/Nav.js';
 import SignUp from './component/Signup/Signup';
 import { PrivateComponents } from './component/PrivateComponents';
-
+import { Login } from './component/Login/Login';
 function App() {
   return (
     <div className="App">
@@ -18,7 +18,10 @@ function App() {
       <Route path='/delete' element={<h1>E-dashboard Delete Product</h1>}></Route>
       <Route path='/profile' element={<h1>E-dashboard Profile</h1>}></Route>
       <Route path='/logout' element={<h1>E-dashboard Logout</h1>}></Route>
+
     </Route>
+    <Route path='/login' element={<Login/>}></Route>
+
       <Route path='/signup' element={<SignUp/>}></Route>
 
     </Routes>

@@ -8,3 +8,16 @@
     text-decoration: none;
     color: black;
 }
+.nav-right{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: right;
+}
+.logo{
+    border-radius: 50%;
+    width: 50px;
+   
+    float: left;
+    padding: 12px;
+    
+}
