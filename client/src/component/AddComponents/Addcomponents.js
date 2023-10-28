@@ -41,7 +41,7 @@ export const Addcomponents = () => {
         <input type='text' value={category} placeholder='enter your product category' className='input-box'  onChange={(e)=>setcategory(e.target.value)}/>
         {error && !category &&<span className='invalid-input'>Enter a valid category </span>}
 
-        <input type='text' value={company} placeholder='eter  product company ' className='input-box'  onChange={(e)=>setcompany(e.target.value)}/>
+        <input type='text' value={company} placeholder='enter  product company ' className='input-box'  onChange={(e)=>setcompany(e.target.value)}/>
         {error && !company &&<span className='invalid-input'>Enter a valid company </span>}
 
         <button onClick={handleproduct} className='btn'> ADD Product</button>

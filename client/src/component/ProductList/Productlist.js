@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import './productlist.css';
+import { Link } from 'react-router-dom';
 const Productlist =()=>{
 
     const [products, setProducts] = useState([]);
@@ -10,11 +11,7 @@ const Productlist =()=>{
     }, []);
 
     const getProducts = async () => {
-        let result = await fetch('http://localhost:5000/products',{
-            headers:{
-                authorization:JSON.parse(localStorage.getItem('token'))
-            }
-        });
+        let result = await fetch('http://localhost:5000/products');
         result = await result.json();
         setProducts(result);
     }
@@ -37,6 +34,7 @@ const Productlist =()=>{
             <li>S. No.</li>
             <li>Name</li>
             <li>Price</li>
+            <li>company</li>
             <li>Operation</li>
 
         </ul>
@@ -46,8 +44,10 @@ const Productlist =()=>{
                     <li>{index + 1}</li>
                     <li>{item.name}</li>
                     <li>{item.price}</li>
+                    <li>{item.company}</li>
                     <li>
                         <button onClick={() => deleteProduct(item._id)}>Delete</button>
+                        <button><Link to="/update">Update</Link></button>
                         
                     </li>
 
